@@ -1,4 +1,4 @@
-package com.base.services;
+package com.base.service;
 
 import com.base.domain.EchoRequest;
 import org.springframework.stereotype.Service;
