@@ -57,6 +57,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Lombok, for reducing boilerplate code -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -64,6 +65,7 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Springdoc OpenAPI, for documenting your API -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
