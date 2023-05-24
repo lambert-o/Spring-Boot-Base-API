@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Log4j2
 @RestController
 public class HelloWorldController {
-    @Operation(summary = "Echos a response")
+    @Operation(summary = "Returns a hello response")
     @GetMapping("/hello")
     public String hello(@ModelAttribute HelloRequest helloRequest) {
         HelloService helloService = new HelloService();

@@ -15,7 +15,6 @@ test:
 	mvn test
 
 run:
-	mvn liquibase:update
 	mvn exec:java -Dexec.mainClass="com.base.Main"
 
 clean:
