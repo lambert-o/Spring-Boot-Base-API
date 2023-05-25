@@ -38,13 +38,25 @@
                     </execution>
                     <execution>
                         <id>report</id>
-                        <phase>prepare-package</phase>
+                        <phase>test</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>jacoco-check</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
                 </executions>
                 <configuration>
+                    <excludes>
+                        <exclude>**/domain/**.class</exclude>
+                        <exclude>**/configuration/**.class</exclude>
+                        <exclude>**/Main.class</exclude>
+                    </excludes>
                     <rules>
                         <rule>
                             <element>PACKAGE</element>
