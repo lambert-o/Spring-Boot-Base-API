@@ -7,12 +7,18 @@ DB_NAME := mydatabase
 DB_USER := postgres
 DB_PASSWORD := postgres
 
-# Define the commands for each target
+
 compile:
 	mvn compile
 
 test:
 	mvn test
+
+integration-test:
+	mvn verify -DskipUnitTests -P jacoco
+
+build:
+	mvn verify
 
 run:
 	mvn exec:java -Dexec.mainClass="com.base.Main"
@@ -33,4 +39,4 @@ local-services-up:
 local-services-down:
 	docker stop $(CONTAINER_NAME)
 
-.PHONY: compile test run clean
+.PHONY: compile test build run clean
