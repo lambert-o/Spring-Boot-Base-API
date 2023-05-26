@@ -1,5 +1,6 @@
+package com.base.service;
+
 import com.base.domain.HelloRequest;
-import com.base.service.HelloService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
