@@ -1,12 +1,18 @@
 package com.base.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Value;
+import jakarta.persistence.*;
+import lombok.Data;
 
-@Value
-@Schema(name = "HelloDto")
+@Entity
+@Data
+@Table(name = "my_table")
 public class HelloDto {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     @Schema(description = "The name received via the hello endpoint", example = "Owen Lambert")
-    String name;
+    public String name;
 }
