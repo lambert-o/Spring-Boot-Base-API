@@ -1,6 +1,8 @@
 # Spring-Boot-Base-API
 
-A Maven project to use as a base upon which to build an API in Java using SpringBoot
+A Maven project to use as a base upon which to build an API in Java using SpringBoot.
+
+There are controller, domain and services layers alongside database interaction. Unit and integration testing has been implemented with code coverage enforcement.
 
 ## Requirements
 Java 17 or later
