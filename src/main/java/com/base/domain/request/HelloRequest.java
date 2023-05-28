@@ -1,4 +1,4 @@
-package com.base.domain;
+package com.base.domain.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

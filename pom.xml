@@ -71,7 +71,7 @@
                 <configuration>
                     <haltOnFailure>true</haltOnFailure>
                     <excludes>
-                        <exclude>**/domain/**.class</exclude>
+                        <exclude>**/domain/**/**.class</exclude>
                         <exclude>**/dto/**.class</exclude>
                         <exclude>**/repository/**.class</exclude>
                         <exclude>**/configuration/**.class</exclude>

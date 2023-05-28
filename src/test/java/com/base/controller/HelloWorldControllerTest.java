@@ -1,6 +1,6 @@
 package com.base.controller;
 
-import com.base.domain.HelloRequest;
+import com.base.domain.request.HelloRequest;
 import com.base.service.HelloService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -30,6 +30,6 @@ public class HelloWorldControllerTest {
         var response = helloWorldController.hello(request);
 
         // then
-        assertEquals("Hello, Owen Lambert", response);
+        assertEquals("Hello, Owen Lambert", response.getBody().getResponse());
     }
 }

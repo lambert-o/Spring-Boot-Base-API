@@ -1,6 +1,6 @@
 package com.base.service;
 
-import com.base.domain.HelloRequest;
+import com.base.domain.request.HelloRequest;
 import com.base.dto.HelloDto;
 import com.base.repository.MyDatabaseRepository;
 import lombok.RequiredArgsConstructor;

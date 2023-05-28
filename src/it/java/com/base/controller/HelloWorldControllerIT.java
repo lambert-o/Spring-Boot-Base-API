@@ -22,6 +22,6 @@ public class HelloWorldControllerIT {
         mockMvc.perform(get("/hello")
                         .param("name", name))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, Owen Lambert"));
+                .andExpect(jsonPath("$.response").value("Hello, Owen Lambert"));
     }
 }
