@@ -19,7 +19,7 @@ public class HelloWorldControllerIT {
     @Test
     void shouldReturnValidResponseWhenRequestValid() throws Exception {
         String name = "Owen Lambert";
-        mockMvc.perform(get("/hello")
+        mockMvc.perform(get("/v1/hello")
                         .param("name", name))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.response").value("Hello, Owen Lambert"));

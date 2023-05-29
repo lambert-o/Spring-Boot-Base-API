@@ -24,22 +24,23 @@
 			"response": []
 		},
 		{
-			"name": "Echo",
+			"name": "Hello",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{SpringBootBaseUrl}}/hello?name=Owen",
+					"raw": "{{SpringBootBaseUrl}}/v1/hello?name=Owen Lambert",
 					"host": [
 						"{{SpringBootBaseUrl}}"
 					],
 					"path": [
+						"v1",
 						"hello"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "Owen"
+							"value": "Owen Lambert"
 						}
 					]
 				}
