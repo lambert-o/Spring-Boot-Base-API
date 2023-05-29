@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "my_table")
+@Table(name = "my_table", schema = "my_schema")
 public class HelloDto {
 
     @Id
