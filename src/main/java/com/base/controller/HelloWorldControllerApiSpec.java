@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import static com.base.controller.HelloWorldController.HELLO_PATH;
 
-@RequestMapping(value = HELLO_PATH, produces = MediaType.APPLICATION_JSON_VALUE,
-        consumes = MediaType.ALL_VALUE)
+@RequestMapping(value = HELLO_PATH, produces = MediaType.APPLICATION_JSON_VALUE)
 public interface HelloWorldControllerApiSpec {
 
     @Operation(
@@ -43,7 +42,7 @@ public interface HelloWorldControllerApiSpec {
                     })
             }
     )
-    @GetMapping
+    @GetMapping("/hello")
     ResponseEntity<HelloResponse> hello(
             @Parameter(name = "HelloRequest", schema =
             @Schema(implementation = HelloRequest.class))

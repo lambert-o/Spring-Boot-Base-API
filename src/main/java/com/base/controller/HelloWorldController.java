@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class HelloWorldController implements HelloWorldControllerApiSpec {
 
-    public static final String HELLO_PATH = "/v1/hello";
+    public static final String HELLO_PATH = "/v1/my-controller";
 
     private final HelloService helloService;
 
