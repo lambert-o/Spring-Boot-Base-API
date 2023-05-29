@@ -29,12 +29,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{SpringBootBaseUrl}}/v1/hello?name=Owen Lambert",
+					"raw": "{{SpringBootBaseUrl}}/v1/my-controller/hello?name=Owen Lambert",
 					"host": [
 						"{{SpringBootBaseUrl}}"
 					],
 					"path": [
 						"v1",
+						"my-controller",
 						"hello"
 					],
 					"query": [
