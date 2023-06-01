@@ -26,6 +26,9 @@ run:
 clean:
 	mvn clean
 
+package:
+	mvn clean compile assembly:single
+
 local-services-up:
 	docker pull postgres:latest
 	docker run -d --rm \
