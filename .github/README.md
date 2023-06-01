@@ -29,8 +29,6 @@ A Postman collection can be found in [/assets](../assets)
 
 ## Docker
 
-It is possible to create a Docker image of this application
-
 **Build image**: docker build -f Dockerfile.build -t spring-boot-base-api .
 
 **Run image**: docker run -p 8080:8080 spring-boot-base-api
