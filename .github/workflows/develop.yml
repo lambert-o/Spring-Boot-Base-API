@@ -1,0 +1,20 @@
+name: develop
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build image
+        run: docker build -f Dockerfile.build -t spring-boot-base-api .
+
+      - name: Run tests
+        run: docker run spring-boot-base-api:latest mvn clean verify
