@@ -23,3 +23,8 @@ logging:
         appender-ref:
           - ref: Console
 
+openapi:
+  info:
+      title: Spring-Boot-Base-API
+      description: A base on which to develop an API using Spring
+      version: 1.0.0
