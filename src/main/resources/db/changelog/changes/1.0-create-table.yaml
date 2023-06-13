@@ -5,7 +5,6 @@ databaseChangeLog:
       changes:
         - sql:
             comment: Create initial schema
-            dbms: postgresql
             endDelimiter: ;GO
             splitStatements: true
             sql:
