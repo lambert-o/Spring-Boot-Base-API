@@ -1,4 +1,4 @@
-name: develop
+name: CI
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-  CI:
+  ci-tests:
     runs-on: ubuntu-latest
 
     steps:
