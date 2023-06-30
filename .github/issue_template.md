@@ -10,5 +10,3 @@
 ## Expected behavior
 
 ### Reason for change
-
-<!-- Please mention other relevant information such as the browser, Node.js, webpack, JavaScript Package, CraftCMS, Plugin versions. -->
