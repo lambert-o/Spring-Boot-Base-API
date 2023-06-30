@@ -1,12 +1,32 @@
-<!-- Please us an appropriate label in the sidebar -->
-<!-- Please ask questions on in #dev-team on our slack if you are unsure about something -->
+---
+name: 🐞 Bug Report
+about: Create a report to help us improve
+title: ''
+labels: 'bug'
+assignees: ''
 
-## Current behavior
+---
 
-<!-- Consider linking to specific line of code in the repo that needs changes -->
+## 📝 Describe the Bug
+A clear and concise description of what the bug is.
 
-### Steps to reproduce
+## 🚶‍♀️ Steps to Reproduce
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-## Expected behavior
+## 🎯 Expected Behavior
+A clear and concise description of what you expected to happen.
 
-### Reason for change
+## 🖼️ Screenshots
+If applicable, add screenshots to help explain your problem.
+
+## 💻 Desktop (please complete the following information):
+- OS: [e.g. iOS]
+- Browser [e.g. chrome, safari]
+- Version [e.g. 22]
+
+## 📚 Additional Context
+Add any other context about the problem here.
