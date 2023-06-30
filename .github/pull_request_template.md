@@ -4,6 +4,11 @@
 Write a description of the changes.  Imagine that the person reviewing the changes has no knowledge of the application your working on and provide as much detail as necessary:
 -->
 
+<!--- When merging the branch to develop please use SQUASH AND MERGE --->
+
+<!--- Before you open a PR: --->
+<!--- !!! Run `make clean build` to run all tests and checks--->
+
 ## Changes
 
 <!-- What changes have you made? -->

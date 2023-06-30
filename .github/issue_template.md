@@ -1,5 +1,4 @@
-<!-- Please us an appropriate label in the sidebar -->
-<!-- Please ask questions on in #dev-team on our slack if you are unsure about something -->
+<!-- Please use an appropriate label in the sidebar -->
 
 ## Current behavior
 
