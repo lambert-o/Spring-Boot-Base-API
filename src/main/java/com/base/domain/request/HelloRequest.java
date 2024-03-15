@@ -8,6 +8,6 @@ import lombok.Data;
 @AllArgsConstructor
 public class HelloRequest {
 
-    @NotBlank(message = "Name is required")
-    public String name;
+  @NotBlank(message = "Name is required")
+  public String name;
 }

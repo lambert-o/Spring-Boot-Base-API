@@ -10,11 +10,12 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class HelloService {
 
-    private final MyDatabaseRepository myDatabaseRepository;
-    public String hello(HelloRequest helloRequest) {
-        HelloDto helloDto = new HelloDto();
-        helloDto.setName(helloRequest.getName());
-        myDatabaseRepository.save(helloDto);
-        return "Hello, " + helloRequest.getName();
-    }
+  private final MyDatabaseRepository myDatabaseRepository;
+
+  public String hello(HelloRequest helloRequest) {
+    HelloDto helloDto = new HelloDto();
+    helloDto.setName(helloRequest.getName());
+    myDatabaseRepository.save(helloDto);
+    return "Hello, " + helloRequest.getName();
+  }
 }
