@@ -13,21 +13,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(MockitoExtension.class)
 public class HelloServiceTest {
 
-    @Mock
-    MyDatabaseRepository myDatabaseRepository;
+  @Mock
+  MyDatabaseRepository myDatabaseRepository;
 
-    @InjectMocks
-    HelloService helloService;
+  @InjectMocks
+  HelloService helloService;
 
-    @Test
-    void shouldReturnValidResponseWhenRequestValid() {
-        // given
-        HelloRequest request = new HelloRequest("Owen Lambert");
+  @Test
+  void shouldReturnValidResponseWhenRequestValid() {
+    // given
+    HelloRequest request = new HelloRequest("Owen Lambert");
 
-        // when
-        var response = helloService.hello(request);
+    // when
+    var response = helloService.hello(request);
 
-        // then
-        assertEquals("Hello, Owen Lambert", response);
-    }
+    // then
+    assertEquals("Hello, Owen Lambert", response);
+  }
 }

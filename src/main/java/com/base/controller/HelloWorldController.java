@@ -10,6 +10,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Controller class for handling hello-related endpoints.
+ */
 @Log4j2
 @RestController
 @RequiredArgsConstructor
@@ -20,7 +23,8 @@ public class HelloWorldController implements HelloWorldControllerApiSpec {
   private final HelloService helloService;
 
   @Override
-  public ResponseEntity<HelloResponse> hello(@ModelAttribute("helloRequest") @Valid HelloRequest helloRequest) {
+  public ResponseEntity<HelloResponse> hello(
+      @ModelAttribute("helloRequest") @Valid HelloRequest helloRequest) {
     log.info("Calling hello service");
     String helloString = helloService.hello(helloRequest);
     HelloResponse helloResponse = new HelloResponse(helloString);

@@ -8,6 +8,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
+/**
+ * DTO (Data Transfer Object) class for a "hello" object.
+ */
 @Entity
 @Data
 @Table(name = "my_table", schema = "my_schema")
