@@ -5,9 +5,9 @@ A Maven project to use as a base upon which to build an API in Java using Spring
 There are controller, domain and services layers alongside database interaction. Unit and integration testing has been implemented with code coverage enforcement.
 
 ## Requirements
-Java 17 or later
+Java 21 or later
 
-Maven 3.x.x or later
+Maven 3.6.3 or later
 
 ## Installation
 
